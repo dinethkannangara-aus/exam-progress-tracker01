@@ -1,6 +1,6 @@
 import "./styles.css";
 
-const STORAGE_KEY = "past-paper-tracker:v1";
+const STORAGE_KEY = "exam-progress-tracker01:v1";
 
 const olSubjects = [
   "Sinhala",

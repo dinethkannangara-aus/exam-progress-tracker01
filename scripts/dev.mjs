@@ -16,7 +16,7 @@ const types = {
 
 createServer(async (request, response) => {
   const url = new URL(request.url, `http://localhost:${port}`);
-  const pathname = url.pathname.replace(/^\/past-paper-tracker/, "") || "/";
+  const pathname = url.pathname.replace(/^\/exam-progress-tracker01/, "") || "/";
   const filePath = normalize(join(root, pathname === "/" ? "index.html" : pathname));
 
   if (!filePath.startsWith(root)) {
@@ -34,5 +34,5 @@ createServer(async (request, response) => {
     response.end("Not found");
   }
 }).listen(port, () => {
-  console.log(`Past Paper Tracker available at http://localhost:${port}/past-paper-tracker/`);
+  console.log(`Past Paper Tracker available at http://localhost:${port}/exam-progress-tracker01/`);
 });

@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 
 const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
 const dist = join(root, "dist");
-const base = "/past-paper-tracker/";
+const base = "/exam-progress-tracker01/";
 
 await rm(dist, { recursive: true, force: true });
 await mkdir(dist, { recursive: true });
