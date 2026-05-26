@@ -1,0 +1,16 @@
+{
+  "name": "past-paper-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "preview": "vite preview --host 0.0.0.0",
+    "build": "node scripts/build.mjs",
+    "build:vite": "vite build",
+    "serve:static": "node scripts/dev.mjs"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}
